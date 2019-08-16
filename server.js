@@ -22,7 +22,7 @@ app.get('/data', (request, response) => {
 }) 
 
 app.get('/', (request, response) => {
-  response.status(200).redirect('index.html');
+  response.status(200).sendFile('index.html');
 })
 
 app.use('*', (request, response) => {
