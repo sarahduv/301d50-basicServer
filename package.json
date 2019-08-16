@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/sarahduv/301d50-basicServer/issues"
   },
-  "homepage": "https://github.com/sarahduv/301d50-basicServer#readme"
+  "homepage": "https://github.com/sarahduv/301d50-basicServer#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1"
+  }
 }
