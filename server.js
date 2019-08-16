@@ -7,19 +7,19 @@ const app = express();
 app.use(express.static('./public'));
 
 // --> /hello is a path
-app.get('/hello', (request, response) => {
-response.status(200).send('hello')
-})
+// app.get('/hello', (request, response) => {
+// response.status(200).send('hello')
+// })
 
-app.get('/data', (request, response) => {
-  let airplaines = {
-    departure: Date.now(),
-    canFly: true,
-    pilot: 'Well trained'
-  }
+// app.get('/data', (request, response) => {
+//   let airplaines = {
+//     departure: Date.now(),
+//     canFly: true,
+//     pilot: 'Well trained'
+//   }
 
-  response.status(200).json(airplanes);
-}) 
+//   response.status(200).json(airplanes);
+// }) 
 
 app.get('/', (request, response) => {
   response.status(200).sendFile('index.html');
